@@ -24,7 +24,7 @@ const Form = () => {
         toast.error(data.error);
       } else {
         toast.success("Registration successful. Please login");
-        router.push("/login");
+        router.push("/auth/login");
       }
     }
   };
