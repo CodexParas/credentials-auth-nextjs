@@ -1,5 +1,5 @@
 "use client";
-import { getSession } from "next-auth/react";
+import { getSession, signOut } from "next-auth/react";
 import { useEffect, useState } from "react";
 
 function Dashboard() {
@@ -18,6 +18,7 @@ function Dashboard() {
     <div>
       <h1>Dashboard</h1>
       <p>You are logged in as {session?.user?.email}</p>
+      <button onClick={() => signOut()}>Logout</button>
     </div>
   );
 }
