@@ -1,8 +1,8 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import { signIn } from "next-auth/react";
 import { toast } from "react-toastify";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const Form = () => {
   const [email, setEmail] = useState("");
